@@ -1,15 +1,3 @@
-[data-tab] {
-  cursor: pointer;
-}
-
-[data-tab-target] {
-  display: none;
-}
-
-[data-tab-target].selected {
-  display: block;
-}
-
 .section-wrapper section {
   max-width: 1440px;
   margin: 0 auto;
@@ -99,6 +87,20 @@
         -ms-flex: 3;
             flex: 3;
   }
+}
+
+/* tabs */
+
+[data-tab] {
+  cursor: pointer;
+}
+
+[data-tab-target] {
+  display: none;
+}
+
+[data-tab-target].selected {
+  display: block;
 }
 
 #tab-nav {

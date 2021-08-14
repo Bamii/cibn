@@ -1,0 +1,2 @@
+- in the html, copy from start to stop comments.
+- copy css and js (the css shouldn't clash with other things.
