@@ -1,6 +1,7 @@
 (function() {
   let currTab = 1;
   const tabButtons = document.querySelectorAll('[data-tab]');
+  const dataModalButton = document.querySelectorAll('[data-modal]') // edited
 
   Array.from(tabButtons).forEach(tab => {
     const idx = tab.dataset.tab;
@@ -14,4 +15,15 @@
       currTab = idx;
     }
   });
+
+  // start edited
+  Array.from(dataModalButton).forEach(btn => {
+    const modalTarget = btn.dataset.modal;
+
+    btn.onclick = function () {
+      currModal = modalTarget
+      document.querySelector(`[data-modal-target=${modalTarget}]`).classList.toggle('visible')
+    }
+  })
+  // end edited
 })();
